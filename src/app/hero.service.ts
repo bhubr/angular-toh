@@ -10,7 +10,9 @@ import { MessageService } from './message.service';
   providedIn: 'root'
 })
 export class HeroService {
-  private heroesUrl = 'https://my-json-server.typicode.com/bhubr/angular-toh/heroes';
+  // My JSON Server will only work for Read all / Read one operations
+  // private heroesUrl = 'https://my-json-server.typicode.com/bhubr/angular-toh/heroes';
+  private heroesUrl = 'http://localhost:8080/heroes';
   constructor(
     private http: HttpClient,
     private messageService: MessageService
